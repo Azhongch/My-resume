@@ -1,9 +1,15 @@
 {
-    "name": "陳冠中 (Jack Chen)",
-    "title": "Senior RD engineer",
-    "contact": {
-        "email": "jack61903@gmail.com",
-        "phone": "+886-928-550-996"
+  "name": "陳冠中",
+  "experiences": [
+    {
+      "company": "美商長典生技",
+      "title": "高級工程師",
+      "period": "2023/03 - Now"
     },
-    "skills": ["ISO13485", "IVDR", "Python", "Molecular Biology"]
+    {
+      "company": "台灣圓點奈米",
+      "title": "工程師",
+      "period": "2021/11 - 2023/03"
+    }
+  ]
 }
