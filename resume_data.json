@@ -11,13 +11,13 @@
             "degree": "微生物免疫與生物藥學系暨研究所 碩士",
             "school": "國立嘉義大學",
             "period": "2019/09 - 2020/09",
-            "logo": "./static/images/ncyu_logo.png"
+            "logo": "./static/images/NCYU.png"
         },
         {
             "degree": "微生物免疫與生物藥學系 學士",
             "school": "國立嘉義大學",
             "period": "2015/09 - 2019/06",
-            "logo": "./static/images/ncyu_logo.png"
+            "logo": "./static/images/DMIB.jpg"
         }
     ],
     "experiences": [
@@ -38,7 +38,7 @@
         {
             "title": "工程師",
             "company": "台灣圓點奈米技術股份有限公司",
-            "logo": "./static/images/gene_logo.png",
+            "logo": "./static/images/TANBEAD.jpg",
             "period": "2021/11 - 2023/03",
             "achievements": [
                 "Develop automated nucleic acid extraction and qPCR detection reagents.",
