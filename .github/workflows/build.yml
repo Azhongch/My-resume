@@ -7,25 +7,27 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+    permissions: # 確保有權限推回檔案
+      contents: write
     steps:
       - name: 檢出程式碼
         uses: actions/checkout@v3
 
-      - name: 設定 Python 環境
+      - name: 設定 Python
         uses: actions/setup-python@v4
         with:
           python-version: '3.9'
 
-      - name: 安裝必要套件
+      - name: 安裝套件
         run: pip install jinja2
 
-      - name: 執行 Python 轉換程式
+      - name: 執行 Python 腳本
         run: python build.py
 
-      - name: 將產生的 index.html 推回倉庫
+      - name: 更新 index.html 到倉庫
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
           git add index.html
-          git commit -m "Auto-update resume index.html" || exit 0
+          git commit -m "自動更新履歷內容" || exit 0
           git push
