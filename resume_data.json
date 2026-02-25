@@ -49,12 +49,24 @@
     ],
     "skill_categories": [
         {
-            "category": "IVD product development",
-            "tags": ["ISO13485", "ISO14971", "IVDR", "QMS"]
+            "category": "IVD 產品開發",
+            "tags": ["設計開發流程", "ISO13485", "ISO14971", "IVDR", "QMS"]
         },
         {
-            "category": "Molecular Biology",
-            "tags": ["nucleic acid extraction", "NAAT-based reagent", "lyophilization"]
+            "category": "分子生物技術",
+            "tags": ["DNA/RNA萃取", "基因轉殖技術", "四環黴素基因表達系統", "蛋白質表現", "核酸放大技術試劑開發與應用 (PCR-based)","試劑凍乾配方設計"]
+        },
+        {
+            "category": "微生物技術",
+            "tags": ["無菌操作技術","酵母菌與絲狀真菌培養", "細菌與真菌鑑定","菌種保存", "抗藥性分析","5 L 發酵槽","酒類發酵","菌株突變與篩選",""]
+        },
+        {
+            "category": "蛋白質分析技術",
+            "tags": ["SDS-PAGE", "Western blotting", "蛋白質生產與純化", "ELISA","凍乾保存配方設計"]
+        },
+        {
+            "category": "其他技術",
+            "tags": ["磁珠系統操作與應用", "micro-FTIR", "Field Effect Transistor", "自製移液設備效能驗證"]
         }
     ]
 }
