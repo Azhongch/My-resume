@@ -112,7 +112,7 @@
                 </section>
 
                 <section class="section">
-                    <h2>學歷 </h2>
+                    <h2>學歷</h2>
                     {% for edu in data.education %}
                     <div style="margin-bottom: 25px; border-bottom: 1px solid #ddd; padding-bottom: 10px;">
                         <div class="flex-header">
@@ -133,3 +133,46 @@
                     {% for cat in data.skill_categories %}
                     <div style="margin-bottom: 20px;">
                         <strong>{{ cat.category }}</strong>
+                        <ul class="skill-list">
+                            {% for tag in cat.tags %}
+                            <li>{{ tag }}</li>
+                            {% endfor %}
+                        </ul>
+                    </div>
+                    {% endfor %}
+                </section>
+            </div>
+
+            <div id="content-2" class="tab-content">
+                <section class="section">
+                    <h2>工作經歷</h2>
+                    {% for exp in data.experiences %}
+                    <div style="margin-bottom: 30px; border-bottom: 1px solid #ddd; padding-bottom: 15px;">
+                        <div class="flex-header">
+                            <div>
+                                <h3 style="margin: 0;">{{ exp.title }}</h3>
+                                <strong style="color: #555;">{{ exp.company }}</strong>
+                            </div>
+                            <img src="{{ exp.logo }}" alt="Logo" class="company-logo">
+                        </div>
+                        <p style="margin-top: 5px;"><em>{{ exp.period }}</em></p>
+                        <ul>
+                            {% for ach in exp.achievements %}
+                            <li>{{ ach }}</li>
+                            {% endfor %}
+                        </ul>
+                    </div>
+                    {% endfor %}
+                </section>
+            </div>
+
+            <div id="content-3" class="tab-content">
+                <section class="section">
+                    <h2>論文著作與專案成果</h2>
+                    <p>此頁面內容規劃中...</p>
+                </section>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
