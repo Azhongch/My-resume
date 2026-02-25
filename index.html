@@ -15,16 +15,25 @@
         .skill-list { list-style: none; padding: 0; display: flex; flex-wrap: wrap; }
         .skill-list li { background-color: #007bff; color: white; padding: 5px 10px; margin-right: 10px; margin-bottom: 10px; border-radius: 4px; font-size: 0.9em; }
         .profile-pic { width: 150px; height: 150px; border-radius: 50%; object-fit: cover; margin-bottom: 15px; border: 4px solid #007bff; }
-        .edu-logo { height: 60px; vertical-align: middle; margin-left: 10px; }
-        .company-logo { height: 80px; object-fit: contain; }
         
-        /* Tab 切換邏輯核心：input 必須在最外層 */
+        /* 圖片大小設定 */
+        .edu-logo { height: 60px; width: auto; object-fit: contain; }
+        .company-logo { height: 80px; width: auto; object-fit: contain; }
+
+        /* 通用的左右對齊容器 */
+        .flex-header {
+            display: flex;
+            justify-content: space-between; /* 文字靠左，圖片靠右 */
+            align-items: center;           /* 垂直居中對齊 */
+            margin-bottom: 5px;
+        }
+        
+        /* Tab 切換邏輯核心 */
         .tab-radio { display: none; } 
         .tab-nav { background-color: #285078; padding: 10px 0; text-align: center; display: flex; justify-content: center; margin-bottom: 20px; }
         .tab-label { color: white; margin: 0 15px; font-weight: bold; padding: 10px 15px; border-radius: 4px; cursor: pointer; transition: background-color 0.3s; }
         .tab-content { display: none; padding: 10px 0; }
 
-        /* 當按鈕被勾選時，改變 Label 顏色並顯示對應內容 */
         #tab1-radio:checked ~ .tab-nav .label1,
         #tab2-radio:checked ~ .tab-nav .label2,
         #tab3-radio:checked ~ .tab-nav .label3 { background-color: #007bff; }
@@ -64,20 +73,26 @@
             <section class="section">
                 <h2>學歷 (Education)</h2>
                 
-                <div style="margin-bottom: 15px;">
-                    <div style="display: flex; align-items: center;">
-                        <h3>微生物免疫與生物藥學系暨研究所 碩士 - 國立嘉義大學</h3>
+                <div style="margin-bottom: 25px; border-bottom: 1px solid #ddd; padding-bottom: 10px;">
+                    <div class="flex-header">
+                        <div>
+                            <h3 style="margin: 0;">微生物免疫與生物藥學系暨研究所 碩士</h3>
+                            <strong style="color: #555;">國立嘉義大學</strong>
+                        </div>
                         <img src="./static/images/NCYU.png" alt="校徽" class="edu-logo">
                     </div>
-                    <p><em>2019/09 - 2020/09</em></p>
+                    <p style="margin-top: 5px;"><em>2019/09 - 2020/09</em></p>
                 </div>
                 
-                <div style="margin-bottom: 15px;">
-                    <div style="display: flex; align-items: center;">
-                        <h3>微生物免疫與生物藥學系 學士 - 國立嘉義大學</h3>
+                <div style="margin-bottom: 25px; border-bottom: 1px solid #ddd; padding-bottom: 10px;">
+                    <div class="flex-header">
+                        <div>
+                            <h3 style="margin: 0;">微生物免疫與生物藥學系 學士</h3>
+                            <strong style="color: #555;">國立嘉義大學</strong>
+                        </div>
                         <img src="./static/images/DMIB.jpg" alt="校徽" class="edu-logo">
                     </div>
-                    <p><em>2015/09 - 2019/06</em></p>
+                    <p style="margin-top: 5px;"><em>2015/09 - 2019/06</em></p>
                 </div>
                 
             </section>
@@ -87,12 +102,15 @@
             <section class="section">
                 <h2>工作經歷 (Experiences)</h2>
                 
-                <div style="margin-bottom: 30px;">
-                    <div style="display: flex; justify-content: space-between; align-items: center;">
-                        <h3>高級工程師/工程師 <small>@ 美商長典生技股份有限公司</small></h3>
+                <div style="margin-bottom: 30px; border-bottom: 1px solid #ddd; padding-bottom: 15px;">
+                    <div class="flex-header">
+                        <div>
+                            <h3 style="margin: 0;">高級工程師/工程師</h3>
+                            <strong style="color: #555;">美商長典生技股份有限公司</strong>
+                        </div>
                         <img src="./static/images/NOVASCOPE.jpg" alt="Logo" class="company-logo">
                     </div>
-                    <p><em>2023/03 - Now</em></p>
+                    <p style="margin-top: 5px;"><em>2023/03 - Now</em></p>
                     <ul>
                         
                         <li>Alzheimer disease biomarker diagnosis platform development (BCR)</li>
@@ -110,12 +128,15 @@
                     </ul>
                 </div>
                 
-                <div style="margin-bottom: 30px;">
-                    <div style="display: flex; justify-content: space-between; align-items: center;">
-                        <h3>工程師 <small>@ 台灣圓點奈米技術股份有限公司</small></h3>
+                <div style="margin-bottom: 30px; border-bottom: 1px solid #ddd; padding-bottom: 15px;">
+                    <div class="flex-header">
+                        <div>
+                            <h3 style="margin: 0;">工程師</h3>
+                            <strong style="color: #555;">台灣圓點奈米技術股份有限公司</strong>
+                        </div>
                         <img src="./static/images/TANBEAD.jpg" alt="Logo" class="company-logo">
                     </div>
-                    <p><em>2021/11 - 2023/03</em></p>
+                    <p style="margin-top: 5px;"><em>2021/11 - 2023/03</em></p>
                     <ul>
                         
                         <li>Develop automated nucleic acid extraction and qPCR detection reagents.</li>
